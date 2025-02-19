@@ -2,5 +2,7 @@
     <string name="app_name">Conversiones</string>
     <string name="LblQtyKilograms">Cantidad en kilogramos (Kg):</string>
     <string name="LblQtyPounds">Cantidad en libras (Lb):</string>
+    <string name="TxtQtyKilogramsHint">Kilogramos</string>
+    <string name="TxtQtyPoundsHint">Libras</string>
     <string name="BtnConvert">Convertir</string>
 </resources>
