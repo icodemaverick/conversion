@@ -7,16 +7,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <TextView
         android:id="@+id/LblQtyKilograms"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="112dp"
         android:text="@string/LblQtyKilograms"
+        app:layout_constraintVertical_bias="0.15"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
     <EditText
         android:id="@+id/TxtQtyKilograms"
@@ -25,8 +25,9 @@
         android:autofillHints=""
         android:hint="@string/TxtQtyKilogramsHint"
         android:ems="10"
-        android:inputType="numberDecimal"
-        app:layout_constraintBottom_toTopOf="@+id/BtnConvert"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/LblQtyKilograms" />
@@ -36,7 +37,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/BtnConvert"
-        app:layout_constraintBottom_toTopOf="@+id/LblQtyPounds"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TxtQtyKilograms" />
@@ -46,19 +48,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/LblQtyPounds"
+        app:layout_constraintVertical_bias="0.05"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/BtnConvert"
-        app:layout_constraintBottom_toTopOf="@+id/TxtQtyPunds" />
+        app:layout_constraintBottom_toBottomOf="parent" />
 
     <EditText
-        android:id="@+id/TxtQtyPunds"
+        android:id="@+id/TxtQtyPounds"
         android:layout_width="wrap_content"
         android:layout_height="48sp"
         android:autofillHints=""
         android:hint="@string/TxtQtyPoundsHint"
         android:ems="10"
         android:inputType="numberDecimal"
+        app:layout_constraintVertical_bias="0.05"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
